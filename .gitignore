@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.env
+.env.local
+*.log
+
+# 초기 실습 파일 (최종 결과물에 포함되지 않음)
+02_*

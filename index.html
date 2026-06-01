@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon 성향 테스트 — 나와 닮은 포켓몬은?</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Pokémon<br />성향 테스트</h1>
+      <p>당신과 가장 닮은 포켓몬을 찾아보세요</p>
+    </header>
+
+    <div class="progress-bar" aria-label="진행률">
+      <div class="progress-bar-fill" id="progressFill"></div>
+    </div>
+
+    <main class="card" id="card" aria-live="polite">
+      <!-- script.js가 동적으로 채움 -->
+    </main>
+
+    <footer class="footer">
+      Powered by
+      <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">PokéAPI</a>
+    </footer>
+
+    <!-- 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- 앱 스크립트 (순서 중요: questions → result → script) -->
+    <script src="./questions.js"></script>
+    <script src="./result.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
